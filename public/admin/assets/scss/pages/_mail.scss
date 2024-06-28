@@ -1,0 +1,85 @@
+
+.mail-option .chk-all,
+.mail-option .btn-group a.btn {
+	border: 1px solid $default-border;
+	border-radius: 3px !important;
+	display: inline-block;
+	padding: 5px 10px;
+	color:$default-text-color;
+}
+
+.mail-option .chk-all,
+.mail-option .btn-group {
+	margin-inline-end: 5px;
+}
+.mail-option {
+	display: inline-block;
+	margin-block-end: 10px;
+	width: 100%;
+}
+
+.mail-option {
+	.chk-all input[type="checkbox"] {
+		margin-block-start: 0;
+	}
+
+	.btn-group a.all {
+		border: medium none;
+		padding: 0;
+	}
+}
+
+.email-icon {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 100%;
+	font-size: 16px !important;
+	box-shadow: 0px 2px 3px rgba(4, 4, 7, 0.1);
+	border: 1px solid $default-border;
+	vertical-align: middle;
+	color: $text-muted2;
+}
+
+.card .list-group.mail-inbox-elements {
+	border-block-end: 1px solid $default-border !important;
+	border-radius: 0;
+}
+
+.mail-inbox .list-group-item {
+	border: 0 !important;
+}
+
+
+ul.inbox-pagination {
+	float: right;
+
+	li {
+		float: left;
+	}
+}
+[dir="rtl"]{
+	ul.inbox-pagination {
+		float: left !important;
+
+	li {
+		float: right !important;
+	}
+	}
+}
+
+.inbox-pagination a.np-btn {
+	border: 1px solid $default-border;
+	border-radius: 3px !important;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-inline-start: 5px;
+}
+
+.inbox-pagination li span {
+	display: inline-block;
+	margin-inline-end: 5px;
+	margin-block-start: 7px;
+}

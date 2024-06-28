@@ -1,0 +1,101 @@
+
+.carn2 {
+    font-weight: 800;
+    line-height: 1.1;
+}
+#btc-chart, #eth-chart, #dash-chart, #da-chart {
+    width: 120px;
+    margin-inline-start: auto;
+    .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+        text-align: right;
+        .apexcharts-tooltip-series-group {
+            text-align: start;
+            justify-content: flex-start;
+        }
+    }
+}
+
+#statistics {
+	line {
+		stroke: $default-border !important;
+        opacity: 0.3;
+	}
+
+	.apexcharts-xcrosshairs, .apexcharts-ycrosshairs {
+        opacity: 0;
+    }
+}
+
+#statistics svg,
+.apexcharts-canvas {
+	width: 100% !important;
+}
+
+.dash1 {
+    color: white;
+	background-image: linear-gradient(to right, $primary, $primary-06);
+}
+.dash2 {
+    color: white;
+	background-image: linear-gradient(to right, #1d976c, #2fd38a);
+}
+
+.dash3 {
+    color: white;
+	background-image: linear-gradient(to right, #fa5420, #f6a800);
+}
+
+.dash4 {
+    color: white;
+	background-image: linear-gradient(to right, #5b73e8, #44c4fa);
+}
+.activity-timeline {
+	border: 1px solid transparent;
+	width: 36px;
+	height: 36px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 36px;
+	border-radius: 50%;
+	position: absolute;
+	background-color: $default-background;
+}
+
+.activity-timeline-content {
+	margin-inline-start: 52px;
+}
+
+.activity-timeline-content span a:hover {
+	text-decoration: underline;
+}
+
+ul.recent-activity {
+	position: relative;
+}
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.recent-activity li {
+	padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.dot-label {
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    border-radius: 100%;
+    margin-inline-end: 5px;
+}
+.revenuetable{
+    margin-bottom: 1.7rem;
+}
+.Recent-transactions-img {
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    justify-content: center;
+    line-height: 37px;
+    margin-inline-end: 12px;
+}
