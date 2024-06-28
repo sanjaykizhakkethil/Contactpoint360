@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Form;
+use App\Models\Job;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\Cast\String_;
 use Illuminate\Support\Facades\Mail;
-
 class FormController extends Controller
 {
     /**
@@ -128,7 +128,14 @@ class FormController extends Controller
             'message' => 'required',
         ]);
 
-        // Handle file upload
+
+        $job = new Job;
+        $job->name = $request->name;
+        $job->email = $request->email;
+        $job->job = $request->job;
+        $job->phone = $request->phone;
+        $job->message = $request->message;
+        $job->save();
 
         $data = [
             'subject' => 'New Job Message Received',

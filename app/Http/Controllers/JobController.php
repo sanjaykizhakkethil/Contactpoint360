@@ -12,7 +12,8 @@ class JobController extends Controller
      */
     public function index()
     {
-        //
+        $result = Job::get();
+        return view('admin.job.index',compact('result'));
     }
 
     /**
@@ -58,8 +59,14 @@ class JobController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Job $job)
+    public function destroy(String $id)
     {
-        //
+        $input = Job::find($id);
+        $success = $input->delete();
+        if ($success) {
+            return back()->with('danger', 'Job post Deleted Successfully');
+        } else {
+            return back()->with('error', 'Try Again');
+        }
     }
 }
